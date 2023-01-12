@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Blackjack Game</title>
+        <!-- CSS -->
+        <link rel="stylesheet" href="index.css">
+        <!-- Meta -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Sofia Sans Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@500&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <main>
+            <div class="main">
+                <h1>Blackjack</h1>
+                <p class="message-el" id="message-el">Want to play a round?</p>
+                <div class="cards">
+                    <div class="card">
+                        <p class="cards-el" id="cards-el">Cards:</p>
+                        <p class="sum-el" id="sum-el">Sum:</p>
+                    </div>
+                    <div class="span">
+                        <span class="cardSpan" id="cardSpan"></span>
+                        <span class="sumSpan" id="sumSpan"></span>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button class="startGame" id="startID" onclick="startGame();">START GAME</button>
+                    <button class="drawCard" id="drawID" onclick="drawCard();" disabled>DRAW CARD</button>
+                    <button class="newGame" id="newID" onclick="newGame();" disabled>NEW GAME</button>
+                    <button class="topUpButton" id="topUpID" onclick="topUpBtn();">TOP UP</button>
+                </div>
+                <div>
+                    <h2>Chips:</h2>
+                    <h2 class="balance" id="balance">0$</h2>
+                </div>
+            </div>
+            <div class="pop-up" id="pop-up">
+                <div class="popupMain" id="popupMain">
+                    <h4>Hello! Welcome to the game!</h4>
+                    <h4>Before you start, top-up your balance</h4>
+                    <div class="topUp-Btn">
+                        <button class="topUpBtn" id="closeModalBtn" onclick="topUp100Btn();">TOP UP 100$</button>
+                    </div>
+                </div>
+                <div class="container-modal-close-btn">
+                    <button class="modal-close-btn" id="modal-close-btn" onclick="closeModalBtn();">X</button>
+                </div>
+            </div>
+        </main>
+        <script src="index.js"></script>
+    </body>
+</html>
